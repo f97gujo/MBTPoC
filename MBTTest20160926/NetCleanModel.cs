@@ -10,7 +10,7 @@ namespace NetCleanModel
         public void v_Homepage()
         {
             Console.WriteLine("NetCleanModel.v_Homepage");
-            Helper.WaitForElement(By.XPath("//*[@id='start']/div/div[1]/section[4]/div/div/div/p/a")).Text.Should().Match("THE CHANGE BEGINS HERE");
+            Helper.WaitForElement(By.XPath("//*[@id='start']/div/div[2]/div/section[4]/div/div/p/a/span")).Text.Should().Match("THE CHANGE BEGINS HERE");
         }
 
         public void e_Homepage()
@@ -22,7 +22,7 @@ namespace NetCleanModel
         public void v_Products()
         {
             Console.WriteLine("NetCleanModel.v_Products");
-            Helper.WaitForElement(By.XPath("//*[@id='companies']/div/div[1]/section[2]/div/div[1]/div/section[4]/div/div/div/a/span")).Text.Should().Match("READ MORE");
+            Helper.WaitForElement(By.XPath("//*[@id='companies']/div/div[2]/section[2]/div[1]/div/section[4]/div/div/a/span")).Text.Should().Match("READ MORE");
         }
 
         public void e_Products()
@@ -34,7 +34,7 @@ namespace NetCleanModel
         public void v_Facts()
         {
             Console.WriteLine("NetCleanModel.v_Facts");
-            Helper.WaitForElement(By.XPath("//*[@id='27589']/section[2]/div/div/section[2]/div/div/div/section/div/div/div/h5/strong/a[3]")).Text.Should().Match("THE NETCLEAN REPORT");
+            Helper.WaitForElement(By.XPath("//*[@id='27589']/section[2]/div/div/section[2]/div/div/section/div/div/h5/strong/a[3]")).Text.Should().Match("THE NETCLEAN REPORT");
         }
 
         public void e_Facts()
@@ -46,7 +46,7 @@ namespace NetCleanModel
         public void v_OurFriends()
         {
             Console.WriteLine("NetCleanModel.v_OurFriends");
-            Helper.WaitForElement(By.XPath("//*[@id='resellers']/div/div/section[2]/div/div[2]/div/p/a/span")).Text.Should().Match("VIEW ALL RESELLERS");
+            Helper.WaitForElement(By.XPath("//*[@id='resellers']/div/div/div/section[2]/div[2]/div/p/a/span")).Text.Should().Match("VIEW ALL RESELLERS");
         }
 
         public void e_OurFriends()
@@ -77,7 +77,7 @@ namespace NetCleanModel
         public void v_Solutions()
         {
             Console.WriteLine("NetCleanModel.v_Solutions");
-            Helper.WaitForElement(By.XPath("//*[@id='27597']/section[1]/div/div[1]/section[4]/div/div[2]/div/section[6]/div/div/div/p/a[1]/span")).Text.Should().Match("CONTACT");
+            Helper.WaitForElement(By.XPath("//*[@id='27597']/section[1]/div/div[2]/section[4]/div[2]/div/section[6]/div/div/p/a[1]/span")).Text.Should().Match("CONTACT");
         }
 
         public void e_Solutions()
@@ -125,13 +125,13 @@ namespace NetCleanModel
         public void v_FactsFacts()
         {
             Console.WriteLine("NetCleanModel.v_FactsFacts");
-            Helper.WaitForElement(By.XPath("//*[@id='facts']/div/div/section[2]/div/div[2]/div/section/div/div/div/h2")).Text.Should().Match("More about the problem");
+            Helper.WaitForElement(By.XPath("//*[@id='facts']/div/div/section[2]/div[2]/div/section/div/div/h2")).Text.Should().Match("More about the problem");
         }
 
         public void e_FactsFacts()
         {
             Console.WriteLine("NetCleanModel.e_FactsFacts");
-            Helper.WaitForElement(By.XPath("//*[@id='27589']/section[2]/div/div/section[2]/div/div/div/section/div/div/div/h5/strong/a[1]")).Click();
+            Helper.WaitForElement(By.XPath("//*[@id='27589']/section[2]/div/div/section[2]/div/div/section/div/div/h5/strong/a[1]")).Click();
         }
     }
 }
