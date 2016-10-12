@@ -3,7 +3,7 @@ Model based testing
 The idea is to test out Model based testing, using Graphwalker (http://graphwalker.github.io/) and Selenium
 
 Models are drawn in yED
-The a rest service is started, using the graphwalker standalone jar, using command java -jar C:\graphwalker-cli-3.4.2.jar -d all online -s RESTFUL -m NetCleanModelHomepage.graphml "random(edge_coverage("100"))" 
+The a rest service is started, using the graphwalker standalone jar, using command java -jar .\graphwalker-cli-3.4.2.jar -d all online -s RESTFUL -m .\NetCleanModel.graphml "random(edge_coverage("100"))" -m Facts.graphml "random(edge_coverage("100"))" -m Products.graphml "random(edge_coverage("100"))" -m OurFriends.graphml "random(edge_coverage("100"))"
 where you enter all of the relevant models, and what stopping criteria is employed (in this case random walking around until all edges have been traversed at least once). started in a command window
 (Needs to be restarted for every new run, otherwise start is not reached)
 
