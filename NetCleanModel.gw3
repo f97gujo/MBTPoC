@@ -1,0 +1,189 @@
+{"name": "VISMODEL",
+	"models": [{
+		"name": "NetCleanModel",
+		"id": "615c2278-22cb-40d9-bc18-f6abb6a1d2f3",
+		"generator": "random(edge_coverage(100))",
+		"startElementId": "e0",
+		"vertices": [{
+			"id": "n1",
+			"name": "v_Homepage",
+			"sharedState": "Homepage",
+			"properties": {
+				"x": 326.61500103114633,
+				"y": 153.03742018811033
+			}
+		}, {
+			"id": "n2",
+			"name": "v_Products",
+			"sharedState": "Products",
+			"properties": {
+				"x": 365.54825284929024,
+				"y": 489.18354453649465
+			}
+		}, {
+			"id": "n3",
+			"name": "v_Facts",
+			"sharedState": "Facts",
+			"properties": {
+				"x": -159.4623719242819,
+				"y": 527.9989513737239
+			}
+		}, {
+			"id": "n4",
+			"name": "v_OurFriends",
+			"sharedState": "OurFriends",
+			"properties": {
+				"x": -236.0,
+				"y": 135.07317164247698
+			}
+		}],
+		"edges": [{
+			"id": "e0",
+			"name": "e_StartBrowser",
+			"targetVertexId": "n1"
+		}, {
+			"id": "e1",
+			"name": "e_Products",
+			"sourceVertexId": "n1",
+			"targetVertexId": "n2"
+		}, {
+			"id": "e2",
+			"name": "e_Facts",
+			"sourceVertexId": "n1",
+			"targetVertexId": "n3"
+		}, {
+			"id": "e3",
+			"name": "e_OurFriends",
+			"sourceVertexId": "n1",
+			"targetVertexId": "n4"
+		}, {
+			"id": "e4",
+			"name": "e_Facts",
+			"sourceVertexId": "n4",
+			"targetVertexId": "n3"
+		}, {
+			"id": "e5",
+			"name": "e_OurFriends",
+			"sourceVertexId": "n3",
+			"targetVertexId": "n4"
+		}, {
+			"id": "e6",
+			"name": "e_Products",
+			"sourceVertexId": "n3",
+			"targetVertexId": "n2"
+		}, {
+			"id": "e7",
+			"name": "e_Facts",
+			"sourceVertexId": "n2",
+			"targetVertexId": "n3"
+		}, {
+			"id": "e8",
+			"name": "e_Homepage",
+			"sourceVertexId": "n4",
+			"targetVertexId": "n1"
+		}, {
+			"id": "e9",
+			"name": "e_Homepage",
+			"sourceVertexId": "n3",
+			"targetVertexId": "n1"
+		}, {
+			"id": "e10",
+			"name": "e_Homepage",
+			"sourceVertexId": "n2",
+			"targetVertexId": "n1"
+		}]
+	}, {
+		"name": "Facts",
+		"id": "adbb4803-2b8c-43a4-b248-c79a5a24a9af",
+		"generator": "random(edge_coverage(100))",
+		"vertices": [{
+			"id": "n0",
+			"name": "v_Facts",
+			"sharedState": "Facts",
+			"properties": {
+				"x": 352.0,
+				"y": 254.0
+			}
+		}, {
+			"id": "n1",
+			"name": "v_FactsFacts",
+			"properties": {
+				"x": 381.0,
+				"y": 474.0
+			}
+		}],
+		"edges": [{
+			"id": "e0",
+			"name": "e_FactsFacts",
+			"sourceVertexId": "n0",
+			"targetVertexId": "n1"
+		}, {
+			"id": "e1",
+			"name": "e_Facts",
+			"sourceVertexId": "n1",
+			"targetVertexId": "n0"
+		}]
+	}, {
+		"name": "OurFriends",
+		"id": "748fdd1b-aaa8-4f2e-a75e-b13404e289f1",
+		"generator": "random(edge_coverage(100))",
+		"vertices": [{
+			"id": "n0",
+			"name": "v_OurFriends",
+			"sharedState": "OurFriends",
+			"properties": {
+				"x": 363.0,
+				"y": 228.0
+			}
+		}, {
+			"id": "n1",
+			"name": "v_Resellers",
+			"properties": {
+				"x": 414.0,
+				"y": 482.0
+			}
+		}],
+		"edges": [{
+			"id": "e0",
+			"name": "e_Resellers",
+			"sourceVertexId": "n0",
+			"targetVertexId": "n1"
+		}, {
+			"id": "e1",
+			"name": "e_OurFriends",
+			"sourceVertexId": "n1",
+			"targetVertexId": "n0"
+		}]
+	}, {
+		"name": "Products",
+		"id": "7c083a06-e7d5-4548-a0b3-6d4a30d9b4b5",
+		"generator": "random(edge_coverage(100))",
+		"vertices": [{
+			"id": "n0",
+			"name": "v_Products",
+			"sharedState": "Products",
+			"properties": {
+				"x": 391.0,
+				"y": 283.0
+			}
+		}, {
+			"id": "n1",
+			"name": "v_Solutions",
+			"properties": {
+				"x": 427.0,
+				"y": 531.0
+			}
+		}],
+		"edges": [{
+			"id": "e0",
+			"name": "e_Solutions",
+			"sourceVertexId": "n0",
+			"targetVertexId": "n1"
+		}, {
+			"id": "e1",
+			"name": "e_Products",
+			"sourceVertexId": "n1",
+			"targetVertexId": "n0"
+		}]
+	}]
+}

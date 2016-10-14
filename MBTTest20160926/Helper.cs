@@ -18,7 +18,7 @@ namespace NetCleanModel
         * Timeout time in seconds used for waiting for element(s) to show up.
         */
         static int timeOut = 20;
-
+      
         public static IWebDriver GetWebDriver()
         {
             if (driver == null)
@@ -29,6 +29,16 @@ namespace NetCleanModel
             return driver;
         }
 
+        public static string Url() 
+        {
+                string Url = driver.Url;
+                return Url;
+               
+        }
+        public static void Close()
+        {
+            driver.Close();
+        }
         /**
          * Will wait for a specified web element to appear. If not found
          * an assertion will fail.

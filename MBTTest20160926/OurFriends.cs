@@ -10,7 +10,8 @@ namespace NetCleanModel
         public void v_OurFriends()
         {
             Console.WriteLine("NetCleanModel.v_OurFriends");
-            Helper.WaitForElement(By.XPath("//*[@id='resellers']/div/div/section[2]/div/div[2]/div/p/a/span")).Text.Should().Match("VIEW ALL RESELLERS");
+            Helper.Url().Should().Match("http://www.netclean.com/our-friends/");
+            //Helper.WaitForElement(By.XPath("//*[@id='resellers']/div/div/div/section[2]/div[2]/div/p/a/span")).Text.Should().Match("VIEW ALL RESELLERS");
         }
 
         public void e_OurFriends()
@@ -22,13 +23,14 @@ namespace NetCleanModel
         public void v_Resellers()
         {
             Console.WriteLine("NetCleanModel.v_Resellers");
-            Helper.WaitForElement(By.CssSelector("#text-4 > div.textwidget > p:nth-child(2) > strong")).Text.Should().Match("Oscar Pettersson");
+            Helper.Url().Should().Match("http://www.netclean.com/our-friends/resellers/");
+            //Helper.WaitForElement(By.CssSelector("#text-4 > div.textwidget > p:nth-child(2) > strong")).Text.Should().Match("Oscar Pettersson");
         }
         //Something strange with this action, BLOCKED in graph
         public void e_Resellers()
         {
             Console.WriteLine("NetCleanModel.e_Resellers");
-            //Helper.WaitForElement(By.LinkText("VIEW ALL RESELLERS")).Click();
+            Helper.WaitForElement(By.LinkText("VIEW ALL RESELLERS")).Click();
         }
     }
 }
